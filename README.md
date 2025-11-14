@@ -248,7 +248,8 @@ Thus, the **Inverting**, **Non-Inverting**, **Differential**, and **Instrumentat
 
 
 
-3.**EX.NO:** 3 INTEGRATOR AND DIFFERENTIATOR USING OP-AMP 
+3.**EX.NO:
+** 3  EXPERIMENTAL VERIFICATION OF INTEGRATOR AND DIFFERENTIATOR USING OP-AMP 
             
 **DATE:**  
              3A INTEGRATOR
@@ -413,7 +414,73 @@ Thus an Integrator and Differentiator using op-amp are designed and their perfor
 
            
 
-4.**EX.NO:** 4 DESIGN OF ACTIVE LOW PASS, HIGH PASS AND BAND PASS FILTERS USING OP-AMP
+4.**EX.NO:**
+ EXPERIMENTAL VERIFICATION OF RC Phase Shift and Wien Bridge oscillators 
+---
+
+## APPARATUS REQUIRED
+
+| S.No | Name of the Apparatus | Range | Quantity |
+|------|------------------------|--------|-----------|
+| 1 | Function Generator | 3 MHz | 1 |
+| 2 | DSO | 30 MHz | 1 |
+| 3 | Dual RPS | (0 – 30) V | 1 |
+| 4 | Op-Amp | µA741 | 1 |
+| 5 | Bread Board | — | 1 |
+| 6 | Resistors | 1K,10K,100K  | 2 |
+| 7 | capacitors | 0.1µF,0.01µF | 1 |
+| 8 | Connecting wires and probes | As required | — |
+
+---
+
+## THEORY
+INTEGRATOR
+A circuit in which the output voltage waveform is the integral of the input voltage waveform is the integrator. Such a circuit is obtained by using a basic inverting amplifier configuration if the feedback resistor Rf is replaced by a capacitor Cf . The expression for the output voltage is given as,
+Vo = - (1/Rf C1 ) ∫ Vi dt
+
+Here the negative sign indicates that the output voltage is 180 0 out of phase with the input signal. Normally between fa and fb the circuit acts as an integrator. Generally, the value of fa < fb . The input signal will be integrated properly if the Time period T of the signal is larger than or equal to Rf Cf . That is,
+T ≥ Rf Cf
+
+The integrator is most commonly used in analog computers and ADC and signal-wave shaping circuits.
+CIRCUIT DIAGRAM
+## CIRCUIT DIAGRAM
+<img width="698" height="423" alt="image" src="https://github.com/user-attachments/assets/f007b349-f96e-42d3-acd3-a37119fc16fc" />
+
+
+## MODEL GRAPH
+<img width="556" height="380" alt="image" src="https://github.com/user-attachments/assets/caa7461c-69f7-4636-8e31-eea6db6efbb5" />
+
+<img width="847" height="553" alt="image" src="https://github.com/user-attachments/assets/d8d3e586-8e58-47ba-baae-2794c7955d51" />
+
+---
+
+## DESIGN
+
+To obtain the output of an Integrator circuit with component values R1Cf = 0.1ms , Rf = 10 R1 and Cf = 0.01 µF and also if 1 V peak square wave at 1000Hz is applied as input.
+We know the frequency at which the gain is 0 dB, fb = 1 / (2π R1 Cf) Therefore fb = 	 Since fb = 10 fa , and also the gain limiting frequency fa = 1 / (2π Rf Cf)
+We get , R1 =	and hence Rf = 	
+
+## PROCEDURE
+
+1.	Connections are given as per the circuit diagram
+2. + Vcc and - Vcc supply is given to the power supply terminal of the Op-Amp IC.
+3.	By adjusting the amplitude and frequency knobs of the function generator, appropriate input voltage is applied to the inverting input terminal of the Op- Amp.
+4.	The output voltage is obtained in the CRO and the input and output voltage waveforms are plotted in a graph sheet.
+
+
+## TABULATION
+| Waveform Type | **Input Amplitude (V)** | **Input Time Period (ms)** | **Input Frequency (Hz)** | **Output Amplitude (V)** | **Output Time Period (ms)** | **Output Frequency (Hz)** |
+|----------------|--------------------------|-----------------------------|---------------------------|---------------------------|------------------------------|----------------------------|
+| Sine Wave      |                          |                             |                           |                           |                              |                            |
+| Square Wave    |                          |                             |                           |                           |                              |                            |
+		
+
+---
+
+## OUT PUT WAVEFORM AND DISCUSSION 
+
+
+4 DESIGN OF ACTIVE LOW PASS, HIGH PASS AND BAND PASS FILTERS USING OP-AMP
             
 **DATE:**  
          
