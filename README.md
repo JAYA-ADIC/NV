@@ -416,78 +416,195 @@ Thus an Integrator and Differentiator using op-amp are designed and their perfor
 
 4.**EX.NO:**
  EXPERIMENTAL VERIFICATION OF RC Phase Shift and Wien Bridge oscillators 
+	DATE:
+AIM:
+To construct a RC phase shift and Wien bridge oscillator to generate sine wave using op-
+amp.
+---
+THEORY:
+RC PHASE SHIFT OSCILLATOR
+RC phase shift oscillator produces 360° of phase shift in two parts. Firstly,each and every RC pair in the feedback network produces 60° phase shift and totally there were three pairs, thus producing 180° Phase shift and secondly, the feedback input is given to the inverting terminal of op-amp to produce another 180° phase shift and a total phase shift of 360°.
+The frequency of oscillation is given by fo = 1 /  6 (2RC ).If an inverting amplifier is used, the gain must be atleast equal to 29 to ensure the oscillations with constant .
 ---
 
 ## APPARATUS REQUIRED
 
-| S.No | Name of the Apparatus | Range | Quantity |
-|------|------------------------|--------|-----------|
-| 1 | Function Generator | 3 MHz | 1 |
-| 2 | DSO | 30 MHz | 1 |
-| 3 | Dual RPS | (0 – 30) V | 1 |
-| 4 | Op-Amp | µA741 | 1 |
-| 5 | Bread Board | — | 1 |
-| 6 | Resistors | 1K,10K,100K  | 2 |
-| 7 | capacitors | 0.1µF,0.01µF | 1 |
-| 8 | Connecting wires and probes | As required | — |
+| S.No | Name of the Apparatus          | Range         | Quantity |
+|------|---------------------------------|---------------|----------|
+|1    | DSO                             | 30 MHz        | 1        |
+|2   | Dual RPS                        | (0–30) V      | 1        |
+| 3    | Op-amp                          | µA741         | 1        |
+|4    | Bread Board                     | —             | 1        |
+|5   | Resistors                       | 1K, 3.3K, 1.5K, 33K, 15K, 1MΩ | 2 |
+|6    | Capacitor                       | 0.1 µF        | 3        |
+| 6   | Connecting wires and probes     | As required   | —        |
+| 
+
+
+
+---
+## CIRCUIT DIAGRAM
+RC PHASE SHIFT OSCILLATOR
+<img width="952" height="976" alt="image" src="https://github.com/user-attachments/assets/dd2b5792-8183-4214-9245-8373279357f6" />
+
+
 
 ---
 
-## THEORY
-INTEGRATOR
-A circuit in which the output voltage waveform is the integral of the input voltage waveform is the integrator. Such a circuit is obtained by using a basic inverting amplifier configuration if the feedback resistor Rf is replaced by a capacitor Cf . The expression for the output voltage is given as,
-Vo = - (1/Rf C1 ) ∫ Vi dt
-
-Here the negative sign indicates that the output voltage is 180 0 out of phase with the input signal. Normally between fa and fb the circuit acts as an integrator. Generally, the value of fa < fb . The input signal will be integrated properly if the Time period T of the signal is larger than or equal to Rf Cf . That is,
-T ≥ Rf Cf
-
-The integrator is most commonly used in analog computers and ADC and signal-wave shaping circuits.
-CIRCUIT DIAGRAM
-## CIRCUIT DIAGRAM
-<img width="698" height="423" alt="image" src="https://github.com/user-attachments/assets/f007b349-f96e-42d3-acd3-a37119fc16fc" />
-
-
 ## MODEL GRAPH
-<img width="556" height="380" alt="image" src="https://github.com/user-attachments/assets/caa7461c-69f7-4636-8e31-eea6db6efbb5" />
+<img width="414" height="324" alt="image" src="https://github.com/user-attachments/assets/3389b740-b70e-4148-9bf9-e5319627260f" />
 
-<img width="847" height="553" alt="image" src="https://github.com/user-attachments/assets/d8d3e586-8e58-47ba-baae-2794c7955d51" />
+## DESIGN
+
+## RC PHASE SHIFT OSCILLATOR
+fo = 1 /  6 (2RC) Rf  29 R1
+C = 0.01F, fo = 200 Hz.
+R = 1 /  6 (2  f C ) = 3.3 k
+Therefore, Choose R = 3.3k
+To prevent loading,
+R1   10 R
+R1 =10 R = 33 k. Rf = 29R1=1MΩ
+
+---
+## PROCEDURE
+1.	Connect the circuit as shown in fig. With the design values.
+2.	Observe the output waveforms using a DSO.For obtaining sine wave adjust Rf.
+3.	Measure the output wave frequency and amplitude.
+---
+## TABULATION/OBSERVATION
+
+
+| S.No | Amplitude (Volts) | Time Period (ms) | Frequency (Hz) |
+|------|--------------------|------------------|----------------|
+| 1    |                    |                  |                |
+| 2    |                    |                  |                |
+| 3    |                    |                  |                |
+| 4    |                    |                  |                |
+| 5    |
+---
+## OUT PUT WAVEFORM AND DISCUSSION 
+
+
+---
+## THEORY
+WIEN BRIDGE
+A bridge circuit with two components connected in series and parallel combination is used to archived the required of phase shift of 0o. When the bridge is balanced the phase shift of 0o is achieved and the feedback signal is connected to the positive terminal; of Op-amp. So the Op-amp is acting as a non-inverting amplifier and the feedback network do not provide any phase shift.
+The frequency of oscillation is given by fo = 1/2πRC
+## APPARATUS REQUIRED
+
+| S.No | Name of the Apparatus          | Range         | Quantity |
+|------|---------------------------------|---------------|----------|
+|1    | DSO                             | 30 MHz        | 1        |
+|2   | Dual RPS                        | (0–30) V      | 1        |
+| 3    | Op-amp                          | µA741         | 1        |
+|4    | Bread Board                     | —             | 1        |
+|5   | Resistors                       | 1K, 3.3K, 1.5K, 33K, 15K, 1MΩ | 2 |
+|6    | Capacitor                       | 0.1 µF        | 3        |
+| 7 | Connecting wires and probes     | As required   | —        |
+
+---
+
+## CIRCUIT DIAGRAM
+WIEN BRIDGE OSCILLATOR
+<img width="570" height="480" alt="image" src="https://github.com/user-attachments/assets/be71f26e-36ad-4677-8117-51362146cbbd" />
+
+
+---
+## MODEL GRAPH
+<img width="414" height="325" alt="image" src="https://github.com/user-attachments/assets/1cc285f7-05c7-4b65-af59-b28cf039fcd3" />
 
 ---
 
 ## DESIGN
 
-To obtain the output of an Integrator circuit with component values R1Cf = 0.1ms , Rf = 10 R1 and Cf = 0.01 µF and also if 1 V peak square wave at 1000Hz is applied as input.
-We know the frequency at which the gain is 0 dB, fb = 1 / (2π R1 Cf) Therefore fb = 	 Since fb = 10 fa , and also the gain limiting frequency fa = 1 / (2π Rf Cf)
-We get , R1 =	and hence Rf = 	
-
+## WIEN BRIDGE OSCILLATOR
+Select frequency f0 = 1KHz
+fo = 1/2πRC
+A = 1+(Rf / R1) = 3.
+To find R & Rf.
+Therefore Rf = 2R1 & assume C = 0.1μf & find R from
+R=1/2πfC
+=1/2*3.14*1*103*0.1*10-6
+= 1.59KΩ.
+Assume R1 = 10R & find Rf from Rf = 2R1
+Therefore R1 = 1.5K *10=15KΩ
+Rf = 15K *2=30KΩ
+---
 ## PROCEDURE
 
 1.	Connections are given as per the circuit diagram
 2. + Vcc and - Vcc supply is given to the power supply terminal of the Op-Amp IC.
 3.	By adjusting the amplitude and frequency knobs of the function generator, appropriate input voltage is applied to the inverting input terminal of the Op- Amp.
 4.	The output voltage is obtained in the CRO and the input and output voltage waveforms are plotted in a graph sheet.
-
-
-## TABULATION
-| Waveform Type | **Input Amplitude (V)** | **Input Time Period (ms)** | **Input Frequency (Hz)** | **Output Amplitude (V)** | **Output Time Period (ms)** | **Output Frequency (Hz)** |
-|----------------|--------------------------|-----------------------------|---------------------------|---------------------------|------------------------------|----------------------------|
-| Sine Wave      |                          |                             |                           |                           |                              |                            |
-| Square Wave    |                          |                             |                           |                           |                              |                            |
-		
-
 ---
+## TABULATION/OBSERVATION
 
+
+| S.No | Amplitude (Volts) | Time Period (ms) | Frequency (Hz) |
+|------|--------------------|------------------|----------------|
+| 1    |                    |                  |                |
+| 2    |                    |                  |                |
+| 3    |                    |                  |                |
+| 4    |                    |                  |                |
+| 5    |
+---
 ## OUT PUT WAVEFORM AND DISCUSSION 
 
 
-4 DESIGN OF ACTIVE LOW PASS, HIGH PASS AND BAND PASS FILTERS USING OP-AMP
+---
+## RESULT:
+
+Thus the RC Phase Shift and Wien Bridge oscillators are designed and tested using op-amp IC 741.
+
+## 5.SIMULATION OF DAC CONVERTER ( R-2R NETWORK)  USING LT- SPICE
+            
+**DATE:**  
+
+
+## AIM  : To simulate the performance of R-2R  circuits using LT- SPICE                
+
+---
+
+## PROCEDURE:
+1.Double click on LT- SPICE  icon
+2.New schematic window open
+3.Pick and paste the required component from the library and draw the circuit diagram .
+4.Complete the connection.
+5.Save the file by giving file name.
+6.Click on the run option ->click advanced open ->select Ac analysis->enter the amplitude-> time delay stop time value.
+7.Click on the run option ->simulationwindow opens->place the probe ->output graph is obtained
+---
+
+## CIRCUIT DIAGRAM
+
+<img width="973" height="448" alt="image" src="https://github.com/user-attachments/assets/6bf521f0-cc4f-4bad-b877-d636616c84a4" />
+
+---
+## MODEL GRAPH
+<img width="488" height="427" alt="image" src="https://github.com/user-attachments/assets/9c8388ab-fc82-4d9a-86ea-1327b148596b" />
+<img width="1006" height="353" alt="image" src="https://github.com/user-attachments/assets/c920c726-d72d-4106-9048-0cd86b895f3d" />
+
+---
+## OUT PUT WAVEFORM AND DISCUSSION 
+
+
+---
+##RESULT:
+Thus the LTspice tools has studied and simulated the performance of R-2R  circuits.
+---
+## 6 DESIGN OF ACTIVE LOW PASS, HIGH PASS AND BAND PASS FILTERS USING OP-AMP
             
 **DATE:**  
          
 ---
 
 ## AIM
-To design and obtain the frequency response of
+            
+**DATE:**  
+         
+---
+
+## AIM and obtain the frequency response of
 
 i)	First order Low Pass Filter (LPF)
 ii)	First order High Pass Filter (HPF)
@@ -495,12 +612,12 @@ iii)	Band pass filter
 
 ---
 
-** 4 A :- LOW PASS FILTER**
+** 6 A :- LOW PASS FILTER**
 
 
 
 ## THEORY
-LOW PASS FILTER
+## LOW PASS FILTER
 A LPF allows frequencies from 0 to higher cut of frequency, fH. At fH the gain is 0.707 Amax, and after fH gain decreases at a constant rate with an increase in frequency. The gain decreases 20dB each time the frequency is increased by 10. Hence the rate at which the gain rolls off after fH is 20dB/decade or 6 dB/ octave, where octave signifies a two fold increase in frequency. The frequency f=fH is called the cut off frequency because the gain of the filter at this frequency is down by 3 dB from 0 Hz. Other equivalent terms for cut-off frequency are -3dB frequency, break frequency, or corner frequency.
 ## APPARATUS REQUIRED
 
@@ -574,7 +691,7 @@ PROCEDURE - (LPF):
 
 ---
 
- ## 4 B HIGH PASS FILTER
+ ## 6 B HIGH PASS FILTER
 
 ---
 
@@ -657,7 +774,7 @@ PROCEDURE - ( HPF):
 
 ---
 
- ## 4 C Band Pass Filter
+ ## 6C Band Pass Filter
 
 ---
 
@@ -742,9 +859,4 @@ PROCEDURE:BAND PASS FILTER
 
 ---
 
-   **EX.NO:** 5
-
-# SIMULATION OF OSCILLATOR USING LT SPICE
-**DATE:**  
---- 
-
+   
