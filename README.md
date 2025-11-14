@@ -94,7 +94,10 @@ Inverting amplifier:
 
 
 ---
+## OUT PUT WAVEFORM AND DISCUSSION 
 
+
+---
 ### **Non-Inverting Amplifier**
 
 If the signal is applied to the non-inverting input terminal without inversion, it is called a **non-inverting amplifier**.  
@@ -137,7 +140,10 @@ PROCEDURE:
 | 3 | | | | | |
 
 ---
+## OUT PUT WAVEFORM AND DISCUSSION 
 
+
+---
 ## DIFFERENTIAL AMPLIFIER
 
 A circuit that amplifies the **difference** between two input signals is called a **Differential Amplifier**.  
@@ -190,7 +196,10 @@ Choose  R1 = 1kOhm, Rf = 10kOhm
 | 3 | | | | | |
 
 ---
+## OUT PUT WAVEFORM AND DISCUSSION 
 
+
+---
 ## INSTRUMENTATION AMPLIFIER
 
 THEORY:
@@ -226,7 +235,10 @@ PROCEDURE:
 | 3 | | | | | |
 
 ---
+## OUT PUT WAVEFORM AND DISCUSSION 
 
+
+---
 ## RESULT
 Thus, the **Inverting**, **Non-Inverting**, **Differential**, and **Instrumentation Amplifiers** were designed and their performance successfully tested using Op-Amp IC 741.
 
@@ -244,11 +256,17 @@ Thus, the **Inverting**, **Non-Inverting**, **Differential**, and **Instrumentat
 
 
 
+## OUT PUT WAVEFORM AND DISCUSSION 
 
 
+---
 
+## RESULT
+Thus, the **Inverting**, **Non-Inverting**, **Differential**, and **Instrumentation Amplifiers** were designed and their performance successfully tested using LT-SPICE.
 
-3.**EX.NO:
+---
+
+3. ##**EX.NO:
 ** 3  EXPERIMENTAL VERIFICATION OF INTEGRATOR AND DIFFERENTIATOR USING OP-AMP 
             
 **DATE:**  
@@ -321,6 +339,8 @@ We get , R1 =	and hence Rf =
 
 ## OUT PUT WAVEFORM AND DISCUSSION 
 
+
+---
 **DATE:**  
              3 B DIFFERENTIATOR
 ---
@@ -414,15 +434,15 @@ Thus an Integrator and Differentiator using op-amp are designed and their perfor
 
            
 
-4.**EX.NO:**
- EXPERIMENTAL VERIFICATION OF RC Phase Shift and Wien Bridge oscillators 
+4. ##**EX.NO:**
+ ## EXPERIMENTAL VERIFICATION OF RC Phase Shift and Wien Bridge oscillators 
 	DATE:
-AIM:
+ ##AIM:
 To construct a RC phase shift and Wien bridge oscillator to generate sine wave using op-
 amp.
 ---
-THEORY:
-RC PHASE SHIFT OSCILLATOR
+ ##THEORY:
+ ##RC PHASE SHIFT OSCILLATOR
 RC phase shift oscillator produces 360° of phase shift in two parts. Firstly,each and every RC pair in the feedback network produces 60° phase shift and totally there were three pairs, thus producing 180° Phase shift and secondly, the feedback input is given to the inverting terminal of op-amp to produce another 180° phase shift and a total phase shift of 360°.
 The frequency of oscillation is given by fo = 1 /  6 (2RC ).If an inverting amplifier is used, the gain must be atleast equal to 29 to ensure the oscillations with constant .
 ---
@@ -487,7 +507,7 @@ R1 =10 R = 33 k. Rf = 29R1=1MΩ
 
 ---
 ## THEORY
-WIEN BRIDGE
+ ##WIEN BRIDGE
 A bridge circuit with two components connected in series and parallel combination is used to archived the required of phase shift of 0o. When the bridge is balanced the phase shift of 0o is achieved and the feedback signal is connected to the positive terminal; of Op-amp. So the Op-amp is acting as a non-inverting amplifier and the feedback network do not provide any phase shift.
 The frequency of oscillation is given by fo = 1/2πRC
 ## APPARATUS REQUIRED
@@ -779,7 +799,7 @@ PROCEDURE - ( HPF):
 ---
 
 ## THEORY
-Band Pass Filter
+ ##Band Pass Filter
 A BPF allows frequencies in between lower cut of frequency and higher cut of frequency, fH-fL. A band-pass (BP) filter passes frequencies in a band fL_fH and attenuates below fL and above fH.. The gain decreases 20dB each time the frequency is increased by 10. Hence the rate at which the gain rolls off after fH is 20dB/decade or 6 dB/ octave, where octave signifies a two fold increase in frequency. The frequency f=fH is called the cut off frequency because the gain of the filter at this frequency is down by 3 dB from 0 Hz. Other equivalent terms for cut-off frequency are -3dB frequency, break frequency, or corner frequency.
 
 
@@ -857,6 +877,10 @@ PROCEDURE:BAND PASS FILTER
 
 ## OUT PUT WAVEFORM AND DISCUSSION 
 
+---
+##RESULT:
+	Thus an Active Low pass, High pass and Band Pass Filters are designed and
+tested using op-amp IC 741.
 ---
 
    
